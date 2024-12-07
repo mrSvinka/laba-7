@@ -9,3 +9,16 @@
 Дана целочисленная матрица {Aij}i=1...n;j=1..n , n<=100. Если сумма наибольшего и наименьшего элементов матрицы равна нулю, 
 упорядочить элементы строк, в которых есть хотя бы один элемент, содержащий цифру 8, по неубыванию. 
 */
+
+#include <iostream>
+#include "MatrixOperations.hpp"
+
+int main() 
+{
+    int matrix[MAX_SIZE][MAX_SIZE];
+    int n;
+    MatrixOps::readMatrix(matrix, n);
+    MatrixOps::processMatrix(matrix, n);
+    MatrixOps::writeMatrix(matrix, n);
+    return 0;
+}
