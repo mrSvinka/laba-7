@@ -1,6 +1,9 @@
 #include <iostream>
 #include "MatrixOperations.hpp"
 
+#include <iostream>
+#include "MatrixOperations.hpp"
+
 namespace MatrixOps 
 {
     void readMatrix(int matrix[MAX_SIZE][MAX_SIZE], int& n) 
@@ -53,7 +56,7 @@ namespace MatrixOps
                 }
                 if (hasEight) 
                 {
-                    sortRow(matrix[i], n);
+                    sortRow(matrix[i], n); 
                 }
             }
         }
@@ -70,3 +73,4 @@ namespace MatrixOps
         }
     }
 }
+
